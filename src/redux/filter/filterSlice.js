@@ -7,10 +7,6 @@ export const FilterSlice = createSlice({
   },
   reducers: {
     contactFilter(state, action) {
-      // return {
-      //   state,
-      //   filter: action.payload,
-      // };
       state.filter = action.payload;
     },
   },

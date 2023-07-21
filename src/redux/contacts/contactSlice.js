@@ -4,7 +4,7 @@ import {
   fetchContacts,
   deleteContact,
   addContact,
-} from 'redux/contactsOperation';
+} from 'redux/contacts/contactsOperation';
 
 const handlePending = state => {
   state.isLoading = true;
@@ -14,7 +14,7 @@ const handleRejected = (state, action) => {
   state.error = action.payload;
 };
 
-export const contactSlice = createSlice({
+export const ContactSlice = createSlice({
   name: 'contacts',
   initialState: {
     entities: [],
@@ -41,4 +41,5 @@ export const contactSlice = createSlice({
     },
   },
 });
-export default contactSlice.reducer;
+
+export default ContactSlice.reducer;

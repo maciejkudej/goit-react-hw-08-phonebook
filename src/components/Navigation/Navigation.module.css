@@ -1,0 +1,76 @@
+.itemList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.item {
+  list-style: none;
+}
+.link {
+  min-width: 100px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: #03f417;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+.link:hover {
+  background: #03f43f;
+  color: #323ab1;
+  box-shadow: 0 0 5px #f4e403, 0 0 25px #03f43f, 0 0 50px #03f43f,
+    0 0 200px #03f43f;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.link:nth-child(1) {
+  filter: hue-rotate(110deg);
+}
+.link span {
+  position: absolute;
+  display: block;
+}
+.link span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+.link span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.link span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.link span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}

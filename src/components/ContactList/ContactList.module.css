@@ -23,5 +23,5 @@
 
 .button__delete:hover,
 .button__delete:focus {
-  background-color: rgb(0, 255, 17);
+  background-color: rgb(255, 0, 221);
 }
