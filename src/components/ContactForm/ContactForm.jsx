@@ -4,19 +4,19 @@ import css from './ContactForm.module.css';
 
 export default function ContactForm({ addContact }) {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const formNameChange = e => {
     setName(e.currentTarget.value);
   };
 
   const formNumberChange = e => {
-    setPhone(e.currentTarget.value);
+    setNumber(e.currentTarget.value);
   };
 
   const formSubmit = e => {
     e.preventDefault();
-    addContact({ name, phone });
+    addContact({ name, number });
     e.currentTarget.reset();
   };
 
